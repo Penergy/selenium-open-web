@@ -272,6 +272,24 @@ def closeFirefox():
     p=os.popen(cmd)
     return p.read()
 
+@app.route('/smartcity')
+def smartcity():
+    global browser
+    # 第一个浏览器打开：istack
+    url =  config.get("smart-city", "url")
+    x_pos = config.get("full-screen", "x_position")
+    y_pos = config.get("full-screen", "y_position")
+    width = config.get("full-screen", "width")
+    height = config.get("full-screen", "height")
+    
+    browser = webdriver.Firefox()
+    browser.get('http://'+url)
+    # sleep(5)
+    cache[url] = browser.current_window_handle
+    browser.set_window_position(x_pos, y_pos)
+    browser.set_window_size(width,height)
+    return "smart-city go!!!"
+
 @app.route('/min')
 def min():
     global browser

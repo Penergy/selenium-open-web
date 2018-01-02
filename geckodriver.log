@@ -5052,14 +5052,14 @@ Unable to read VR Path Registry from C:\Users\lenovo\AppData\Local\openvr\openvr
 1514862897267	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://121.199.32.197/login.aspx"
 1514862898235	Marionette	DEBUG	Received DOM event "pageshow" for "http://121.199.32.197/login.aspx"
 1514863036878	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
-127.0.0.1:63426
-1514862902598	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofile.gMyUKIzOS6tA"
-1514862903867	Marionette	INFO	Enabled via --marionette
-[GFX1-]: Could not get a DXGI adapter
-[GFX1-]: Could not get a DXGI adapter
-[GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
 Unable to read VR Path Registry from C:\Users\lenovo\AppData\Local\openvr\openvrpaths.vrpath
-[Child 26296, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+JavaScript error: jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/nsAsyncShutdown.js, line 119: Error: We have already registered a distinct blocker with the same name: Crash Reporter: blocking on minidumpgeneration.
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+NG: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
 [Child 26296, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
 [GFX1-]: Could not get a DXGI adapter
 1514862908000	Marionette	INFO	Listening on port 63434
@@ -5200,3 +5200,62 @@ JavaScript warning: http://122.144.216.18:12366/js/homeJs/jquery.js, line 1: Usi
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
 Unable to read VR Path Registry from C:\Users\lenovo\AppData\Local\openvr\openvrpaths.vrpath
+1514871910827	geckodriver	INFO	geckodriver 0.19.0
+1514871910843	geckodriver	INFO	Listening on 127.0.0.1:55451
+1514871912871	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofile.q8qtcPC4oX16"
+1514871915050	Marionette	INFO	Enabled via --marionette
+[GFX1-]: Could not get a DXGI adapter
+[GFX1-]: Could not get a DXGI adapter
+[GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+Unable to read VR Path Registry from C:\Users\lenovo\AppData\Local\openvr\openvrpaths.vrpath
+[Child 9464, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9464, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GFX1-]: Could not get a DXGI adapter
+1514871918838	Marionette	INFO	Listening on port 55460
+1514871919159	Marionette	WARN	TLS certificate errors will be ignored for this session
+1514871919229	Marionette	DEBUG	Register listener.js for window 4294967297
+1514871919255	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1514871919279	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1514871919279	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1514871919929	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://127.0.0.1:8087/smartcity-platform/home.html"
+1514871922956	Marionette	DEBUG	Received DOM event "pageshow" for "http://127.0.0.1:8087/smartcity-platform/home.html"
+Unable to read VR Path Registry from C:\Users\lenovo\AppData\Local\openvr\openvrpaths.vrpath
+[Child 29656, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\lenovo\AppData\Local\openvr\openvrpaths.vrpath
+[Child 1256, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+Unable to read VR Path Registry from C:\Users\lenovo\AppData\Local\openvr\openvrpaths.vrpath
+1514871999849	geckodriver	INFO	geckodriver 0.19.0
+1514871999865	geckodriver	INFO	Listening on 127.0.0.1:55699
+1514872001930	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofile.m2pwMs7BuIwy"
+1514872003275	Marionette	INFO	Enabled via --marionette
+[GFX1-]: Could not get a DXGI adapter
+[GFX1-]: Could not get a DXGI adapter
+Unable to read VR Path Registry from C:\Users\lenovo\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 18164, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\lenovo\AppData\Local\openvr\openvrpaths.vrpath
+[Child 16864, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 16864, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GFX1-]: Could not get a DXGI adapter
+1514872007070	Marionette	INFO	Listening on port 55709
+1514872007201	Marionette	WARN	TLS certificate errors will be ignored for this session
+1514872007279	Marionette	DEBUG	Register listener.js for window 4294967297
+1514872007329	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1514872007354	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1514872007354	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1514872008147	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://127.0.0.1:8087/smartcity-platform/home.html"
+1514872009193	Marionette	DEBUG	Received DOM event "pageshow" for "http://127.0.0.1:8087/smartcity-platform/home.html"
+[Parent 18164, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 18164, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\lenovo\AppData\Local\openvr\openvrpaths.vrpath
+[Child 26616, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\lenovo\AppData\Local\openvr\openvrpaths.vrpath
+[Child 18340, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18340, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

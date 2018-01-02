@@ -19,7 +19,7 @@ $ .\activate
 2. 打开Flask web服务
 ```
 $ cd root
-$ python index.py
+$ python index.1.py
 ```
 
 ### 打开flask应用

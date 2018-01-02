@@ -289,3 +289,15 @@ selenium.common.exceptions.NoSuchElementException: Message: Unable to locate ele
 2018-01-02 11:16:03,998 - WARNING - index.1.py - index - 96 - warning log
 2018-01-02 11:16:21,026 - WARNING - index.1.py - index - 96 - warning log
 2018-01-02 11:16:28,360 - WARNING - index.1.py - index - 92 - warning log
+2018-01-02 13:43:57,477 - WARNING - index.1.py - index - 92 - warning log
+2018-01-02 13:45:23,045 - ERROR - app.py - log_exception - 1560 - Exception on /smartcity [GET]
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
