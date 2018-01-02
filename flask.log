@@ -1,0 +1,171 @@
+warning log
+warning log
+2017-09-26 17:35:58,315 - ERROR - app.py - log_exception - 1560 - Exception on /page/light [GET]
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "index.py", line 92, in page
+    autoLogin(url,browser)
+  File "index.py", line 36, in autoLogin
+    username = driver.find_element_by_name('ssoId')
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 426, in find_element_by_name
+    return self.find_element(by=By.NAME, value=name)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 832, in find_element
+    'value': value})['value']
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: [name="ssoId"]
+
+2017-09-26 17:48:14,407 - ERROR - app.py - log_exception - 1560 - Exception on /page/light [GET]
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "index.py", line 96, in page
+    autoLogin(url,browser)
+  File "index.py", line 35, in autoLogin
+    username = driver.find_element_by_name('ssoId')
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 426, in find_element_by_name
+    return self.find_element(by=By.NAME, value=name)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 832, in find_element
+    'value': value})['value']
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: [name="ssoId"]
+
+2017-09-26 17:50:33,143 - ERROR - app.py - log_exception - 1560 - Exception on /page/light [GET]
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "index.py", line 96, in page
+    autoLogin(url,browser)
+  File "index.py", line 35, in autoLogin
+    username = driver.find_element_by_id('ssoId')
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 330, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 832, in find_element
+    'value': value})['value']
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: [id="ssoId"]
+
+2017-09-26 17:52:13,593 - ERROR - app.py - log_exception - 1560 - Exception on /page/light [GET]
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "index.py", line 96, in page
+    autoLogin(url,browser)
+  File "index.py", line 35, in autoLogin
+    username = driver.find_element_by_id('ssoId')
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 330, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 832, in find_element
+    'value': value})['value']
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: [id="ssoId"]
+
+2017-09-26 17:58:19,317 - ERROR - app.py - log_exception - 1560 - Exception on /page/light [GET]
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "index.py", line 97, in page
+    autoLogin(url,browser)
+  File "index.py", line 40, in autoLogin
+    username.send_keys(usernameStr)
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+2017-09-26 18:01:44,573 - ERROR - app.py - log_exception - 1560 - Exception on /page/light [GET]
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "index.py", line 97, in page
+    autoLogin(url,browser)
+  File "index.py", line 40, in autoLogin
+    username.send_keys(usernameStr)
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+2017-09-26 18:03:32,554 - ERROR - app.py - log_exception - 1560 - Exception on /page/light [GET]
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\xampp\htdocs\inesa-test\test1\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "index.py", line 97, in page
+    autoLogin(url,browser)
+  File "index.py", line 40, in autoLogin
+    username.send_keys(Keys.chord(Keys.CONTROL, "a"), usernameStr)
+AttributeError: type object 'Keys' has no attribute 'chord'
