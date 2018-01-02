@@ -21,3 +21,7 @@ $ .\activate
 $ cd root
 $ python index.py
 ```
+
+### 打开flask应用
+---
+地址为：127.0.0.1:5000或者10.100.3.13:5000
