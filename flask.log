@@ -169,3 +169,123 @@ Traceback (most recent call last):
   File "index.py", line 40, in autoLogin
     username.send_keys(Keys.chord(Keys.CONTROL, "a"), usernameStr)
 AttributeError: type object 'Keys' has no attribute 'chord'
+2018-01-02 09:38:43,504 - WARNING - index.1.py - index - 62 - warning log
+2018-01-02 09:52:32,340 - WARNING - index.1.py - index - 62 - warning log
+2018-01-02 09:55:20,484 - WARNING - index.1.py - index - 62 - warning log
+2018-01-02 09:56:03,006 - WARNING - index.1.py - index - 62 - warning log
+2018-01-02 10:04:40,078 - WARNING - index.1.py - index - 62 - warning log
+2018-01-02 10:06:58,934 - WARNING - index.1.py - index - 62 - warning log
+2018-01-02 10:19:45,996 - WARNING - index.1.py - index - 62 - warning log
+2018-01-02 10:19:47,340 - WARNING - index.1.py - index - 62 - warning log
+2018-01-02 10:20:22,276 - WARNING - index.1.py - index - 62 - warning log
+2018-01-02 10:33:52,524 - WARNING - index.1.py - index - 62 - warning log
+2018-01-02 10:37:11,200 - WARNING - index.1.py - index - 62 - warning log
+2018-01-02 10:42:00,397 - WARNING - index.1.py - index - 62 - warning log
+2018-01-02 10:42:31,946 - ERROR - app.py - log_exception - 1560 - Exception on /page1 [GET]
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\index.1.py", line 144, in page1
+    browser.set_window_position(x_pos, _pos)
+NameError: name '_pos' is not defined
+2018-01-02 10:48:53,640 - WARNING - index.1.py - index - 73 - warning log
+2018-01-02 10:49:30,996 - ERROR - app.py - log_exception - 1560 - Exception on /page1 [GET]
+Traceback (most recent call last):
+  File "d:\programdata\miniconda3\Lib\configparser.py", line 1138, in _unify_values
+    sectiondict = self._sections[section]
+KeyError: 'browser-win-4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\index.1.py", line 162, in page1
+    x_pos = config.get("browser-win-4", "x_position")
+  File "d:\programdata\miniconda3\Lib\configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "d:\programdata\miniconda3\Lib\configparser.py", line 1141, in _unify_values
+    raise NoSectionError(section)
+configparser.NoSectionError: No section: 'browser-win-4'
+2018-01-02 10:50:21,831 - WARNING - index.1.py - index - 73 - warning log
+2018-01-02 10:58:50,619 - WARNING - index.1.py - index - 73 - warning log
+2018-01-02 11:12:25,245 - WARNING - index.1.py - index - 96 - warning log
+2018-01-02 11:13:17,592 - ERROR - app.py - log_exception - 1560 - Exception on /page2 [GET]
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\index.1.py", line 269, in page2
+    autoLogin('waste-oil',browser)
+  File ".\index.1.py", line 48, in autoLogin
+    username = driver.find_element_by_id('userid')
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 330, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 832, in find_element
+    'value': value})['value']
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: [id="userid"]
+
+2018-01-02 11:15:33,923 - ERROR - app.py - log_exception - 1560 - Exception on /page2 [GET]
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\index.1.py", line 269, in page2
+    autoLogin('waste-oil',browser)
+  File ".\index.1.py", line 48, in autoLogin
+    username = driver.find_element_by_id('userid')
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 330, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 832, in find_element
+    'value': value})['value']
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: [id="userid"]
+
+2018-01-02 11:16:03,998 - WARNING - index.1.py - index - 96 - warning log
+2018-01-02 11:16:21,026 - WARNING - index.1.py - index - 96 - warning log
+2018-01-02 11:16:28,360 - WARNING - index.1.py - index - 92 - warning log

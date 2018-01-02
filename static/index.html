@@ -6,19 +6,36 @@
 </head>
 
 <body>
-    <button onclick="clickjd()">JD</button>
-    <button onclick="clicktaobao()">taobao</button>
-    <button onclick="clickbaidu()">baidu</button>
-    <button onclick="clickpython()">python</button>
-    <button onclick="clickLight()">light</button>
+    <!-- <button onclick="clickFoodtrace()">食品溯源二维码</button>
+    <button onclick="clickFoodBigdata()">食品溯源大数据</button>
+    <button onclick="clickYunhan()">智慧供水管网信息化管理平台</button>
+    <button onclick="clickFoodInAli()">aliyun食品溯源大数据</button>
+    <button onclick="clickLight()">飞乐路灯</button>
+    <button onclick="clickIstack()">Istack驾驶舱</button> -->
+    <button onclick="clickPage1()">打开四窗口1</button>
+    <button onclick="clickPage2()">打开四窗口2</button>
+    <button onclick="closeFirefox()">关闭所有Firefox</button>
+    
 </body>
 
 </html>
 
 <script type="text/javascript">
-    function clickjd() {
-        var url = "http://127.0.0.1:5000/page/www.jd.com"
-        var data = "url=www.jd.com"
+    function closeFirefox(){
+        var url = "http://127.0.0.1:5000/closeFirefox"
+        var data = "close all firefox"
+        $.ajax({
+            url: url,
+            data: data,
+            success: function(data){
+                console.log("test firefox");
+            },
+            type: "GET"
+        });
+    }
+    function clickFoodtrace() {
+        var url = "http://127.0.0.1:5000/page/shfda"
+        var data = "url=www.shfda.org/public/query.do"
         $.ajax({
             url: url,
             data: data,
@@ -27,13 +44,10 @@
             },
             type: "GET"
         });
-        // $.get(url,, function (result) {
-        //     console.log("test jd");
-        // });
     }
-    function clicktaobao() {
-        var url = "http://127.0.0.1:5000/page/www.taobao.com"
-        var data = "url=www.taobao.com"
+    function clickFoodBigdata() {
+        var url = "http://127.0.0.1:5000/page/foodbigdata"
+        var data = "url=suyuan.a-stack.com/production/index.html"
         $.ajax({
             url: url,
             data: data,
@@ -43,9 +57,9 @@
             type: "GET"
         });
     }
-    function clickbaidu() {
-        var url = "http://127.0.0.1:5000/page/www.baidu.com"
-        var data = "url=www.baidu.com"
+    function clickYunhan() {
+        var url = "http://127.0.0.1:5000/page/yunhan"
+        var data = "url=122.144.216.18:12366/"
         $.ajax({
             url: url,
             data: data,
@@ -55,9 +69,9 @@
             type: "GET"
         });
     }
-    function clickpython() {
-        var url = "http://127.0.0.1:5000/page/www.python.org"
-        var data = "url=www.python.org"
+    function clickFoodInAli() {
+        var url = "http://127.0.0.1:5000/page/foodinali"
+        var data = "url=datav.aliyun.com/share/10df343bf9501b233dace9082021643a"
         $.ajax({
             url: url,
             data: data,
@@ -76,6 +90,43 @@
             data: data,
             success: function(data){
                 console.log("test light");
+            },
+            type: "GET"
+        });
+    }
+
+    function clickIstack(){
+        var url = "http://127.0.0.1:5000/page/istack"
+        var data = "http://smartcity.i-stack.org:8088/dashboard/index"
+        $.ajax({
+            url: url,
+            data: data,
+            success: function(data){
+                console.log("test istack");
+            },
+            type: "GET"
+        });
+    }
+    function clickPage1(){
+        var url = "http://127.0.0.1:5000/page1"
+        var data = "1"
+        $.ajax({
+            url: url,
+            data: data,
+            success: function(data){
+                console.log("test page 1");
+            },
+            type: "GET"
+        });
+    }
+    function clickPage2(){
+        var url = "http://127.0.0.1:5000/page2"
+        var data = "2"
+        $.ajax({
+            url: url,
+            data: data,
+            success: function(data){
+                console.log("test page 2");
             },
             type: "GET"
         });

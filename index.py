@@ -129,7 +129,8 @@ if __name__ == '__main__':
     firefox_width = config.get("firefox-setting", "width")
     firefox_height = config.get("firefox-setting", "height")
 
-    browser = webdriver.Firefox()
+    browser = webdriver.Chrome()
+    # browser = webdriver.Firefox()
     browser.get('http://'+url)
     # sleep(5)
     cache[url] = browser.current_window_handle
