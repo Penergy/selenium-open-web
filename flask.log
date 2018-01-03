@@ -301,3 +301,83 @@ Traceback (most recent call last):
   File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1725, in make_response
     raise ValueError('View function did not return a response')
 ValueError: View function did not return a response
+2018-01-02 14:28:41,485 - WARNING - index.1.py - index - 92 - warning log
+2018-01-02 14:40:28,423 - WARNING - index.1.py - index - 92 - warning log
+2018-01-03 10:05:02,123 - WARNING - index.1.py - index - 92 - warning log
+2018-01-03 10:07:32,707 - WARNING - index.1.py - index - 92 - warning log
+2018-01-03 10:09:50,347 - ERROR - app.py - log_exception - 1560 - Exception on /page3 [GET]
+Traceback (most recent call last):
+  File "d:\programdata\miniconda3\Lib\configparser.py", line 1138, in _unify_values
+    sectiondict = self._sections[section]
+KeyError: 'browser-win21'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\index.1.py", line 291, in page3
+    height = config.get("browser-win21", "height")
+  File "d:\programdata\miniconda3\Lib\configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "d:\programdata\miniconda3\Lib\configparser.py", line 1141, in _unify_values
+    raise NoSectionError(section)
+configparser.NoSectionError: No section: 'browser-win21'
+2018-01-03 10:11:54,746 - ERROR - app.py - log_exception - 1560 - Exception on /page3 [GET]
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\index.1.py", line 310, in page3
+    cache[url] = browser.current_window_handle
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 605, in current_window_handle
+    return self.execute(Command.W3C_GET_CURRENT_WINDOW_HANDLE)['value']
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Failed to decode response from marionette
+
+2018-01-03 10:12:17,327 - ERROR - app.py - log_exception - 1560 - Exception on /page4 [GET]
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\index.1.py", line 343, in page4
+    cache[url] = browser.current_window_handle
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 605, in current_window_handle
+    return self.execute(Command.W3C_GET_CURRENT_WINDOW_HANDLE)['value']
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "D:\xampp\htdocs\selenium-open-web\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Failed to decode response from marionette
+

@@ -71,6 +71,15 @@ def autoLogin(typeUrl,driver):
         username.send_keys( usernameStr)
         password.clear()
         password.send_keys( passwordStr)
+    elif(typeUrl == 'istack'):
+        username = driver.find_element_by_id('id_username')
+        password = driver.find_element_by_id('id_password')
+        usernameStr = config.get("istack","username")
+        passwordStr = config.get("istack","password")
+        username.clear()
+        username.send_keys( usernameStr)
+        password.clear()
+        password.send_keys( passwordStr)
         
 @app.before_request
 def before_request():
@@ -150,6 +159,77 @@ def page1():
     cache[url] = browser.current_window_handle
     browser.set_window_position(x_pos, y_pos)
     browser.set_window_size(width,height)
+    autoLogin('istack',browser)
+
+    # 第二个浏览器打开：
+    url =  config.get("feilo-light", "url")
+    x_pos = config.get("browser-win-2", "x_position")
+    y_pos = config.get("browser-win-2", "y_position")
+    width = config.get("browser-win-2", "width")
+    height = config.get("browser-win-2", "height")
+    
+    browser = webdriver.Firefox()
+    browser.get('http://'+url)
+    # sleep(5)
+    cache[url] = browser.current_window_handle
+    browser.set_window_position(x_pos, y_pos)
+    browser.set_window_size(width,height)
+    autoLogin('light',browser)
+
+    # 第三个浏览器打开：
+    url =  config.get("second-water-supply", "url")
+    x_pos = config.get("browser-win-3", "x_position")
+    y_pos = config.get("browser-win-3", "y_position")
+    width = config.get("browser-win-3", "width")
+    height = config.get("browser-win-3", "height")
+    
+    browser = webdriver.Firefox()
+    browser.get('http://'+url)
+    # sleep(5)
+    cache[url] = browser.current_window_handle
+    browser.set_window_position(x_pos, y_pos)
+    browser.set_window_size(width,height)
+    autoLogin('second-water-supply',browser)
+
+    # 第四个浏览器打开：
+    url = config.get("smart-water-supply","url")
+    x_pos = config.get("browser-win-4", "x_position")
+    y_pos = config.get("browser-win-4", "y_position")
+    width = config.get("browser-win-4", "width")
+    height = config.get("browser-win-4", "height")
+    
+    browser = webdriver.Firefox()
+    browser.get('http://'+url)
+    # sleep(5)
+    cache[url] = browser.current_window_handle
+    browser.set_window_position(x_pos, y_pos)
+    browser.set_window_size(width,height)
+
+   
+    return 'page 1'
+
+"""
+url：            http://xxx.xxx.xxx.xxx/page2,
+description:     通过该链接打开istack平台、食品溯源二维码、智能路灯、废弃油脂四个平台
+
+"""
+@app.route('/page2')
+def page2():
+    global browser
+    # 第一个浏览器打开：
+    url =  config.get("quick-test", "url")
+    x_pos = config.get("browser-win-1", "x_position")
+    y_pos = config.get("browser-win-1", "y_position")
+    width = config.get("browser-win-1", "width")
+    height = config.get("browser-win-1", "height")
+    
+    browser = webdriver.Firefox()
+    browser.get('http://'+url)
+    # sleep(5)
+    cache[url] = browser.current_window_handle
+    browser.set_window_position(x_pos, y_pos)
+    browser.set_window_size(width,height)
+    autoLogin('quick-test',browser)
 
     # 第二个浏览器打开：
     url =  config.get("food-trace-qr", "url")
@@ -166,7 +246,7 @@ def page1():
     browser.set_window_size(width,height)
 
     # 第三个浏览器打开：
-    url =  config.get("feilo-light", "url")
+    url =  config.get("waste-oil", "url")
     x_pos = config.get("browser-win-3", "x_position")
     y_pos = config.get("browser-win-3", "y_position")
     width = config.get("browser-win-3", "width")
@@ -178,10 +258,10 @@ def page1():
     cache[url] = browser.current_window_handle
     browser.set_window_position(x_pos, y_pos)
     browser.set_window_size(width,height)
-    autoLogin('light',browser)
+    autoLogin('waste-oil',browser)
 
     # 第四个浏览器打开：
-    url =  config.get("waste-oil", "url")
+    url = config.get("food-trace-bigdata","url")
     x_pos = config.get("browser-win-4", "x_position")
     y_pos = config.get("browser-win-4", "y_position")
     width = config.get("browser-win-4", "width")
@@ -193,19 +273,14 @@ def page1():
     cache[url] = browser.current_window_handle
     browser.set_window_position(x_pos, y_pos)
     browser.set_window_size(width,height)
-    autoLogin('waste-oil',browser)
-    return 'page 1'
 
-"""
-url：            http://xxx.xxx.xxx.xxx/page2,
-description:     通过该链接打开istack平台、食品溯源二维码、智能路灯、废弃油脂四个平台
+    return 'page 2'
 
-"""
-@app.route('/page2')
-def page2():
-    global browser
-    # 第一个浏览器打开：istack
-    url =  config.get("quick-test", "url")
+@app.route('/page3')
+def page3():
+
+    # 第一个浏览器打开：
+    url =  config.get("mooc-edu", "url")
     x_pos = config.get("browser-win-1", "x_position")
     y_pos = config.get("browser-win-1", "y_position")
     width = config.get("browser-win-1", "width")
@@ -217,10 +292,9 @@ def page2():
     cache[url] = browser.current_window_handle
     browser.set_window_position(x_pos, y_pos)
     browser.set_window_size(width,height)
-    autoLogin('quick-test',browser)
 
     # 第二个浏览器打开：
-    url =  config.get("second-water-supply", "url")
+    url =  config.get("stu-edu", "url")
     x_pos = config.get("browser-win-2", "x_position")
     y_pos = config.get("browser-win-2", "y_position")
     width = config.get("browser-win-2", "width")
@@ -232,10 +306,9 @@ def page2():
     cache[url] = browser.current_window_handle
     browser.set_window_position(x_pos, y_pos)
     browser.set_window_size(width,height)
-    autoLogin('second-water-supply',browser)
-
+    
     # 第三个浏览器打开：
-    url =  config.get("mooc-edu", "url")
+    url =  config.get("nyretail", "url")
     x_pos = config.get("browser-win-3", "x_position")
     y_pos = config.get("browser-win-3", "y_position")
     width = config.get("browser-win-3", "width")
@@ -247,10 +320,9 @@ def page2():
     cache[url] = browser.current_window_handle
     browser.set_window_position(x_pos, y_pos)
     browser.set_window_size(width,height)
-    # autoLogin('light',browser)
 
     # 第四个浏览器打开：
-    url =  config.get("smart-water-supply", "url")
+    url =  config.get("smart-factory", "url")
     x_pos = config.get("browser-win-4", "x_position")
     y_pos = config.get("browser-win-4", "y_position")
     width = config.get("browser-win-4", "width")
@@ -262,9 +334,27 @@ def page2():
     cache[url] = browser.current_window_handle
     browser.set_window_position(x_pos, y_pos)
     browser.set_window_size(width,height)
-    # autoLogin('waste-oil',browser)
 
-    return 'page 2'
+    return 'page 3'
+
+
+@app.route('/page4')
+def page4():
+    # 第一个浏览器打开：
+    url =  config.get("smart-factory", "url")
+    x_pos = config.get("browser-win-1", "x_position")
+    y_pos = config.get("browser-win-1", "y_position")
+    width = config.get("browser-win-1", "width")
+    height = config.get("browser-win-1", "height")
+    
+    browser = webdriver.Firefox()
+    browser.get('http://'+url)
+    # sleep(5)
+    cache[url] = browser.current_window_handle
+    browser.set_window_position(x_pos, y_pos)
+    browser.set_window_size(width,height)
+
+    return 'page 4'
 
 @app.route('/closeFirefox')
 def closeFirefox():

@@ -12,35 +12,37 @@
     <button onclick="clickFoodInAli()">aliyun食品溯源大数据</button>
     <button onclick="clickLight()">飞乐路灯</button>
     <button onclick="clickIstack()">Istack驾驶舱</button> -->
-    <button onclick="clickPage1()">打开四窗口1</button>
-    <button onclick="clickPage2()">打开四窗口2</button>
-    <button onclick="clickSmartcity()">新型智慧城市</button>
+    <button onclick="clickPage1()">istack-飞乐-水务</button>
+    <button onclick="clickPage2()">食品追溯</button>
+    <button onclick="clickPage3()">教育-零售-工厂</button>
+    <button onclick="clickPage4()">政务云</button>
+    <!-- <button onclick="clickSmartcity()">新型智慧城市</button> -->
     <button onclick="closeFirefox()">关闭所有Firefox</button>
-    
+
 </body>
 
 </html>
 
 <script type="text/javascript">
-    function clickSmartcity(){
+    function clickSmartcity() {
         var url = "http://127.0.0.1:5000/smartcity"
         var data = "smart city"
         $.ajax({
             url: url,
             data: data,
-            success: function(data){
+            success: function (data) {
                 console.log("smart city");
             },
             type: "GET"
         });
     }
-    function closeFirefox(){
+    function closeFirefox() {
         var url = "http://127.0.0.1:5000/closeFirefox"
         var data = "close all firefox"
         $.ajax({
             url: url,
             data: data,
-            success: function(data){
+            success: function (data) {
                 console.log("test firefox");
             },
             type: "GET"
@@ -52,7 +54,7 @@
         $.ajax({
             url: url,
             data: data,
-            success: function(data){
+            success: function (data) {
                 console.log("test jd");
             },
             type: "GET"
@@ -64,7 +66,7 @@
         $.ajax({
             url: url,
             data: data,
-            success: function(data){
+            success: function (data) {
                 console.log("test taobao");
             },
             type: "GET"
@@ -76,7 +78,7 @@
         $.ajax({
             url: url,
             data: data,
-            success: function(data){
+            success: function (data) {
                 console.log("test baidu");
             },
             type: "GET"
@@ -88,7 +90,7 @@
         $.ajax({
             url: url,
             data: data,
-            success: function(data){
+            success: function (data) {
                 console.log("test python");
             },
             type: "GET"
@@ -101,44 +103,69 @@
         $.ajax({
             url: url,
             data: data,
-            success: function(data){
+            success: function (data) {
                 console.log("test light");
             },
             type: "GET"
         });
     }
 
-    function clickIstack(){
+    function clickIstack() {
         var url = "http://127.0.0.1:5000/page/istack"
         var data = "http://smartcity.i-stack.org:8088/dashboard/index"
         $.ajax({
             url: url,
             data: data,
-            success: function(data){
+            success: function (data) {
                 console.log("test istack");
             },
             type: "GET"
         });
     }
-    function clickPage1(){
+    function clickPage1() {
         var url = "http://127.0.0.1:5000/page1"
         var data = "1"
         $.ajax({
             url: url,
             data: data,
-            success: function(data){
+            success: function (data) {
                 console.log("test page 1");
             },
             type: "GET"
         });
     }
-    function clickPage2(){
+    function clickPage2() {
         var url = "http://127.0.0.1:5000/page2"
         var data = "2"
         $.ajax({
             url: url,
             data: data,
-            success: function(data){
+            success: function (data) {
+                console.log("test page 2");
+            },
+            type: "GET"
+        });
+    }
+
+    function clickPage3() {
+        var url = "http://127.0.0.1:5000/page3"
+        var data = "2"
+        $.ajax({
+            url: url,
+            data: data,
+            success: function (data) {
+                console.log("test page 2");
+            },
+            type: "GET"
+        });
+    }
+    function clickPage4() {
+        var url = "http://127.0.0.1:5000/page4"
+        var data = "2"
+        $.ajax({
+            url: url,
+            data: data,
+            success: function (data) {
                 console.log("test page 2");
             },
             type: "GET"
