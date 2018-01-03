@@ -381,3 +381,16 @@ Traceback (most recent call last):
     raise exception_class(message, screen, stacktrace)
 selenium.common.exceptions.WebDriverException: Message: Failed to decode response from marionette
 
+2018-01-03 11:12:14,322 - WARNING - index.1.py - index - 101 - warning log
+2018-01-03 11:15:56,588 - WARNING - index.1.py - index - 101 - warning log
+2018-01-03 11:16:04,223 - WARNING - index.1.py - index - 101 - warning log
+2018-01-03 11:16:53,627 - WARNING - index.1.py - index - 101 - warning log
+2018-01-03 11:23:02,734 - WARNING - index.1.py - index - 101 - warning log
+2018-01-03 11:23:46,918 - WARNING - index.1.py - index - 101 - warning log
+2018-01-03 11:23:47,995 - WARNING - index.1.py - index - 101 - warning log
+2018-01-03 11:25:58,787 - WARNING - index.1.py - index - 101 - warning log
+2018-01-03 11:26:01,418 - WARNING - index.1.py - index - 101 - warning log
+2018-01-03 11:43:05,158 - WARNING - index.1.py - index - 101 - warning log
+2018-01-03 11:43:25,045 - WARNING - index.1.py - index - 101 - warning log
+2018-01-03 11:43:53,869 - WARNING - index.1.py - index - 101 - warning log
+2018-01-03 11:45:17,183 - WARNING - index.1.py - index - 101 - warning log

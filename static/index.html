@@ -24,8 +24,9 @@
 </html>
 
 <script type="text/javascript">
+    var ip = "10.100.3.13:5000"
     function clickSmartcity() {
-        var url = "http://127.0.0.1:5000/smartcity"
+        var url = "http://"+ip+"/smartcity"
         var data = "smart city"
         $.ajax({
             url: url,
@@ -37,7 +38,7 @@
         });
     }
     function closeFirefox() {
-        var url = "http://127.0.0.1:5000/closeFirefox"
+        var url = "http://"+ip+"/closeFirefox"
         var data = "close all firefox"
         $.ajax({
             url: url,
@@ -49,7 +50,7 @@
         });
     }
     function clickFoodtrace() {
-        var url = "http://127.0.0.1:5000/page/shfda"
+        var url = "http://"+ip+"/page/shfda"
         var data = "url=www.shfda.org/public/query.do"
         $.ajax({
             url: url,
@@ -61,7 +62,7 @@
         });
     }
     function clickFoodBigdata() {
-        var url = "http://127.0.0.1:5000/page/foodbigdata"
+        var url = "http://"+ip+"/page/foodbigdata"
         var data = "url=suyuan.a-stack.com/production/index.html"
         $.ajax({
             url: url,
@@ -123,7 +124,7 @@
         });
     }
     function clickPage1() {
-        var url = "http://127.0.0.1:5000/page1"
+        var url = "http://"+ip+"/page1"
         var data = "1"
         $.ajax({
             url: url,
@@ -135,7 +136,7 @@
         });
     }
     function clickPage2() {
-        var url = "http://127.0.0.1:5000/page2"
+        var url = "http://"+ip+"/page2"
         var data = "2"
         $.ajax({
             url: url,
@@ -148,7 +149,7 @@
     }
 
     function clickPage3() {
-        var url = "http://127.0.0.1:5000/page3"
+        var url = "http://"+ip+"/page3"
         var data = "2"
         $.ajax({
             url: url,
@@ -160,7 +161,7 @@
         });
     }
     function clickPage4() {
-        var url = "http://127.0.0.1:5000/page4"
+        var url = "http://"+ip+"/page4"
         var data = "2"
         $.ajax({
             url: url,
