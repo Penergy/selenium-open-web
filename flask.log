@@ -394,4 +394,27 @@ selenium.common.exceptions.WebDriverException: Message: Failed to decode respons
 2018-01-03 11:43:25,045 - WARNING - index.1.py - index - 101 - warning log
 2018-01-03 11:43:53,869 - WARNING - index.1.py - index - 101 - warning log
 2018-01-03 11:45:17,183 - WARNING - index.1.py - index - 101 - warning log
-2018-01-04 16:15:48,865 - WARNING - index.1.py - index - 101 - warning log
+2018-01-03 12:31:36,311 - ERROR - app.py - log_exception - 1560 - Exception on /page1 [GET]
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python36\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python36\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python36\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Program Files\Python36\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python36\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "index.1.py", line 159, in page1
+    cache[url] = browser.current_window_handle
+  File "C:\Program Files\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 619, in current_window_handle
+    return self.execute(Command.W3C_GET_CURRENT_WINDOW_HANDLE)['value']
+  File "C:\Program Files\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 311, in execute
+    self.error_handler.check_response(response)
+  File "C:\Program Files\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 237, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: Unable to locate window
+
