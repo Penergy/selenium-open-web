@@ -394,3 +394,4 @@ selenium.common.exceptions.WebDriverException: Message: Failed to decode respons
 2018-01-03 11:43:25,045 - WARNING - index.1.py - index - 101 - warning log
 2018-01-03 11:43:53,869 - WARNING - index.1.py - index - 101 - warning log
 2018-01-03 11:45:17,183 - WARNING - index.1.py - index - 101 - warning log
+2018-01-04 16:15:48,865 - WARNING - index.1.py - index - 101 - warning log
