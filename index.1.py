@@ -418,5 +418,7 @@ if __name__ == '__main__':
     # browser.set_window_position(firefox_x_pos, firefox_y_pos)
     # browser.set_window_size(firefox_width,firefox_height)
 
-    app.run(host='10.100.3.13', port=5050,debug=False)
+    ip = config.get("frontpage","ip")
+    port = config.get("frontpage","port")
+    app.run(host=ip, port=int(port),debug=False)
     
