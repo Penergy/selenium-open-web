@@ -418,3 +418,7 @@ Traceback (most recent call last):
     raise exception_class(message, screen, stacktrace)
 selenium.common.exceptions.NoSuchWindowException: Message: Unable to locate window
 
+2018-01-04 16:46:17,535 - WARNING - index.1.py - index - 101 - warning log
+2018-01-04 16:47:25,499 - WARNING - index.1.py - index - 101 - warning log
+2018-01-04 16:50:42,285 - WARNING - index.1.py - index - 101 - warning log
+2018-01-04 16:50:43,249 - WARNING - index.1.py - index - 101 - warning log

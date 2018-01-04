@@ -308,7 +308,7 @@ def page3():
     browser.set_window_size(width,height)
     
     # 第三个浏览器打开：
-    url =  config.get("nyretail", "url")
+    url =  config.get("governance", "url")
     x_pos = config.get("browser-win-3", "x_position")
     y_pos = config.get("browser-win-3", "y_position")
     width = config.get("browser-win-3", "width")
@@ -341,11 +341,11 @@ def page3():
 @app.route('/page4')
 def page4():
     # 第一个浏览器打开：
-    url =  config.get("smart-factory", "url")
-    x_pos = config.get("browser-win-1", "x_position")
-    y_pos = config.get("browser-win-1", "y_position")
-    width = config.get("browser-win-1", "width")
-    height = config.get("browser-win-1", "height")
+    url =  config.get("nyretail", "url")
+    x_pos = config.get("browser-win-full", "x_position")
+    y_pos = config.get("browser-win-full", "y_position")
+    width = config.get("browser-win-full", "width")
+    height = config.get("browser-win-full", "height")
     
     browser = webdriver.Firefox()
     browser.get('http://'+url)
@@ -418,5 +418,5 @@ if __name__ == '__main__':
     # browser.set_window_position(firefox_x_pos, firefox_y_pos)
     # browser.set_window_size(firefox_width,firefox_height)
 
-    app.run(host='10.100.3.13', port=5000,debug=False)
+    app.run(host='10.100.3.13', port=5050,debug=False)
     

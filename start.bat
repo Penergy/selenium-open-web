@@ -1,1 +1,1 @@
-python D:\xampp\htdocs\selenium-open-web\index.1.py
+python C:\xampp\htdocs\selenium-open-web\index.1.py
